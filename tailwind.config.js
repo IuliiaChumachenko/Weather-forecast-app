@@ -10,7 +10,15 @@ module.exports = {
   },
   prefix: '',
   theme: {
-    extend: {}
+    extend: {
+      height: {
+        '250': '250'
+      },
+      padding: {
+        'top-260': '260px',
+        'top-30': '30px'
+      },
+    }
   },
   plugins: []
 }
