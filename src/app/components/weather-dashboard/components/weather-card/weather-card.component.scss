@@ -1,13 +1,4 @@
 .weather-info {
-  &__temperature {
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  &__state {
-    font-size: 30px;
-  }
-
   &__icon {
     display: inline-block;
     background: url('../../../../../assets/icons/unknown.svg'), linear-gradient(transparent, transparent) no-repeat;

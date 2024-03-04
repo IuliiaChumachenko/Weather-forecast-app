@@ -1,6 +1,6 @@
 <div class="weather-info">
-  <p class="weather-info__temperature">{{ todayWeather?.degree }}&deg;</p>
-  <p class="weather-info__state flex items-end">
+  <p class="text-50 font-bold">{{ todayWeather?.degree }}&deg;</p>
+  <p class="flex items-end text-30">
     {{ todayWeather?.state }}
     <i class="weather-info__icon weather-info__icon--{{todayWeather?.state?.toLowerCase()}}"></i>
   </p>

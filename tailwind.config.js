@@ -18,6 +18,14 @@ module.exports = {
         'top-260': '260px',
         'top-30': '30px'
       },
+      fontSize: {
+        '50': '50px',
+        '30': '30px',
+        '24': '24px',
+      },
+      letterSpacing: {
+        '1': '1px',
+      }
     }
   },
   plugins: []

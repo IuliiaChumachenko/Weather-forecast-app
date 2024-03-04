@@ -13,11 +13,6 @@
     padding: 0 $location-search-border-radius;
   }
 
-  &__title {
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-
   &__content-title::after {
     content: "";
     display: block;

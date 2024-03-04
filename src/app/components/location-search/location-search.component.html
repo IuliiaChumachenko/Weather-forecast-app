@@ -1,11 +1,11 @@
 <div class="location-search flex flex-col h-min lg:h-full">
   <div class="location-search__header flex justify-between">
-    <span class="location-search__title">forecast</span>
+    <span class="text-24 tracking-1">forecast</span>
     <app-current-location></app-current-location>
   </div>
 
   <div class="location-search__content flex flex-col items-center flex-auto pt-top-30 lg:pt-top-260">
-    <span class="location-search__content-title">{{ contentTitle | titlecase }}</span>
+    <span class="location-search__content-title text-24">{{ contentTitle | titlecase }}</span>
     <app-current-location-search-field></app-current-location-search-field>
   </div>
 </div>
