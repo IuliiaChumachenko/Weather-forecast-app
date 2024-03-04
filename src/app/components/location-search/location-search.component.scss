@@ -1,0 +1,42 @@
+@import "variables";
+
+:host {
+  border-radius: inherit;
+  background: url("../../../assets/img/location-background.jpg") no-repeat center/cover;
+}
+
+.location-search {
+  color: $white;
+
+  &__header {
+    margin-top: $location-search-border-radius;
+    padding: 0 $location-search-border-radius;
+  }
+
+  &__title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  &__content {
+    padding-top: 260px;
+  }
+
+  &__content-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: $white;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 1028px) {
+  .location-search {
+    &__content {
+      padding-top: 30px;
+    }
+  }
+}

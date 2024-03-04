@@ -1,0 +1,19 @@
+<form class="location-search-form">
+  <mat-form-field class="location-search-form__field">
+    <input type="text"
+           placeholder="Enter location"
+           aria-label="Location"
+           matInput
+           class="location-search-form__field-input truncate"
+           (keydown.enter)="onKeydown($event.target)"
+           [formControl]="searchFieldControl"
+           [matAutocomplete]="auto">
+    <mat-icon aria-label="Search icon" fontIcon="search" class="location-search-form__field-icon"></mat-icon>
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="loadWeather($event.option.value)">
+      @for (option of filteredLocations$ | async; track option) {
+      <mat-option [value]="option">{{option}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+  <mat-icon aria-label="gps" fontIcon="gps_fixed" class="location-search-form__icon" (click)="getCurrentLocationInfo()"></mat-icon>
+</form>

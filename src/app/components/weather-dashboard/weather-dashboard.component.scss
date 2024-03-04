@@ -1,0 +1,30 @@
+@import "variables";
+
+.navigation {
+  margin-top: $location-search-border-radius;
+  height: $nav-menu-height;
+
+  &::ng-deep {
+    --mat-tab-header-active-label-text-color: $black;
+    --mat-tab-header-inactive-label-text-color: $black;
+
+    .mdc-tab__text-label {
+      color: $black !important;
+    }
+
+    .mdc-tab-indicator__content {
+      height: 5px;
+      background: var(--mdc-tab-indicator-active-indicator-color);
+      border-radius: 4px;
+      width: 35px;
+    }
+
+    .mat-badge-content {
+      color: $red;
+      top: 10px;
+      left: 90%;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

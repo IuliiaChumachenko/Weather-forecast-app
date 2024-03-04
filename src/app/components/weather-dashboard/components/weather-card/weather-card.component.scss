@@ -1,0 +1,41 @@
+.weather-info {
+  &__temperature {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  &__state {
+    font-size: 30px;
+  }
+
+  &__icon {
+    display: inline-block;
+    background: url('../../../../../assets/icons/unknown.svg'), linear-gradient(transparent, transparent) no-repeat;
+    padding: 0;
+    margin-left: 10px;
+    width: 64px;
+    min-width: 60px;
+    height: 64px;
+
+    &--clouds {
+      background: url('../../../../../assets/icons/clouds.svg'), linear-gradient(transparent, transparent) no-repeat;
+    }
+
+
+    &--rain {
+      background: url('../../../../../assets/icons/rain.svg'), linear-gradient(transparent, transparent) no-repeat;
+    }
+
+    &--clear {
+      background: url('../../../../../assets/icons/clear.svg'), linear-gradient(transparent, transparent) no-repeat;
+    }
+
+    &--snow {
+      background: url('../../../../../assets/icons/snow.svg'), linear-gradient(transparent, transparent) no-repeat;
+    }
+  }
+
+  &__date {
+    margin-top: 20px;
+  }
+}

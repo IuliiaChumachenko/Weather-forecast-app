@@ -1,0 +1,8 @@
+<div class="weather-info">
+  <p class="weather-info__temperature">{{ todayWeather?.degree }}&deg;</p>
+  <p class="weather-info__state flex items-end">
+    {{ todayWeather?.state }}
+    <i class="weather-info__icon weather-info__icon--{{todayWeather?.state?.toLowerCase()}}"></i>
+  </p>
+  <p class="weather-info__date">{{ todayWeather?.date | date: 'EEEE d, MMMM yy' }}</p>
+</div>

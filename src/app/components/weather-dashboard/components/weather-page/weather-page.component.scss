@@ -1,0 +1,5 @@
+@import "variables";
+
+.weather-page {
+  height: calc(100% - #{$location-search-border-radius} - #{$nav-menu-height});
+}

@@ -1,0 +1,38 @@
+.today-weather {
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  &__card {
+    margin: 30px;
+    height: 250px;
+
+    &-content {
+      padding: 30px !important;
+      display: flex;
+
+      &--left {
+        width: 55%;
+        padding-right: 30px;
+      }
+
+      &--right {
+        flex-grow: 1;
+        border-left: 3px solid #D2D2D2;
+        padding-left: 30px;
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &::ng-deep {
+      --mdc-elevated-card-container-elevation: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

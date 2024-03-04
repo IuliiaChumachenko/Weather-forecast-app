@@ -1,0 +1,16 @@
+@import "variables";
+
+.main {
+  height: calc(100vh - 2 * #{$container-margin-vertical});
+  margin: $container-margin-vertical $container-margin-horizontal;
+  border-radius: $location-search-border-radius;
+  background: $white;
+}
+
+@media (max-width: 1028px) {
+  .main {
+    margin: 0;
+    border-radius: 0;
+    height: fit-content;;
+  }
+}

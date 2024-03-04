@@ -1,0 +1,8 @@
+<div class="weather-forecast__title">Daily</div>
+<div class="weather-forecast__carousel">
+  <p-carousel [value]="weatherForecast" [numVisible]="3" [numScroll]="3" [circular]="false">
+    <ng-template let-info pTemplate="item">
+      <app-weather-card class="weather-forecast__carousel-item" [todayWeather]="info"></app-weather-card>
+    </ng-template>
+  </p-carousel>
+</div>

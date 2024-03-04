@@ -1,0 +1,43 @@
+@import "variables";
+
+.location-search-form {
+
+  &__field {
+    width: 400px;
+
+    input, input::placeholder {
+      color: $white !important;
+    }
+
+    input {
+      padding-right: 25px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &::ng-deep {
+      .mat-mdc-text-field-wrapper {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+      }
+
+      .mdc-line-ripple {
+        display: none;
+      }
+    }
+  }
+
+  &__field-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
